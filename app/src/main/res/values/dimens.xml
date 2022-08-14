@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="match_constraints">0dp</dimen>
+    <dimen name="size_tinyish">2dp</dimen>
+    <dimen name="size_tiny">4dp</dimen>
+    <dimen name="size_tiny_plus">6dp</dimen>
+    <dimen name="size_small">8dp</dimen>
+    <dimen name="size_small_plus">10dp</dimen>
+    <dimen name="size_medium">12dp</dimen>
+    <dimen name="size_general">16dp</dimen>
+    <dimen name="size_general_plus">18dp</dimen>
+    <dimen name="size_extra_large">20dp</dimen>
+    <dimen name="size_extra_large_plus">26dp</dimen>
+    <dimen name="size_general_double">32dp</dimen>
+    <dimen name="size_general_plus_double">36dp</dimen>
+    <dimen name="size_double_extra_large">42dp</dimen>
+    <dimen name="size_general_double_double">64dp</dimen>
+</resources>

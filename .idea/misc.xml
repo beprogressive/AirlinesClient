@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/counter_view.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/date_view_item.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/flight_item.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/flight_view_item.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/main_screen.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/passenger_view_item.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/passengers_screen.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/result_screen.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/search_airport_screen.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/search_screen.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/search_view_item.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/segment_item.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/remie/OneDrive/Gradles/AirlinesClient/app/src/main/res/layout/station_item.xml" value="0.34057971014492755" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

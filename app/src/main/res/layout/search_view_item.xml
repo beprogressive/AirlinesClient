@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="subtitle"
+            type="String" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:showIn="@layout/search_screen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_small">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Text.Title.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_tiny"
+                tools:text="@string/departure_date" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:text="@{subtitle}"
+                style="@style/Text.Subtitle.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_tiny"
+                tools:text="20.07.2021" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

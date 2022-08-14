@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Airlines Client</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="departure_date">Departure date</string>
+    <string name="passengers">Passengers</string>
+    <string name="search">Search</string>
+    <string name="select_departure_airport_first">You need to select departure airport first</string>
+    <string name="select_departure_date">Select departure date</string>
+    <string name="adult">Adult</string>
+    <string name="teen">Teen</string>
+    <string name="child">Child</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="server_error">Unable to connect to server</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="fill_all_data_first">You need to fill all data first.</string>
+    <string name="flight_not_found">Unfortunately there is no flight on particular date.\nChoose different one.</string>
+    <string name="go_back">Go back</string>
+    <string name="total_price">Total price:</string>
+    <string name="price_adult">Adult: %d x %.2f %s</string>
+    <string name="price_teen">Teen: %d x %.2f %s</string>
+    <string name="price_child">Child: %d x %.2f %s</string>
+    <string name="search_airport">Search airport</string>
+    <string name="find_airport">Find airport</string>
+    <string name="flights">Flights</string>
+    <string name="search_origin_airport">Search origin airport</string>
+    <string name="search_destination_airport">Search destination airport</string>
+    <string name="flight_details">Flight details</string>
+    <string name="price_range">Price range:</string>
+    <string name="no_filter_results">There are no flights in selected price range</string>
+
+    <string name="ok">OK</string>
+    <string name="passengers_desc">Adults %d, Teens %d, Children %d</string>
+    <string name="amount">%.2f %s</string>
+</resources>

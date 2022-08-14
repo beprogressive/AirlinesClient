@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="adult">
+        <item quantity="one">%d Adult</item>
+        <item quantity="other">%d Adults</item>
+    </plurals>
+    <plurals name="teen">
+        <item quantity="one">%d Teen</item>
+        <item quantity="other">%d Teens</item>
+    </plurals>
+    <plurals name="child">
+        <item quantity="one">%d Child</item>
+        <item quantity="other">%d Children</item>
+    </plurals>
+    <plurals name="stop">
+        <item quantity="one">%d Stop</item>
+        <item quantity="other">%d Stops</item>
+    </plurals>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="beprogressive.airlinesclient.search.ui.viewmodel.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/size_general"
+        tools:context="com.ryanair.androidchallenge.com.gmail.beprogressive.it.airlinesclient.ui.SearchScreen">
+
+        <include
+            android:id="@+id/departure_view"
+            layout="@layout/flight_view_item"
+            app:subtitle="@{viewModel.originStation.name}"
+            app:airportCode="@{viewModel.originStation.code}"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_general"
+            app:layout_constraintBottom_toTopOf="@id/destination_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <include
+            android:id="@+id/destination_view"
+            layout="@layout/flight_view_item"
+            app:subtitle="@{viewModel.destinationStation.name}"
+            app:airportCode="@{viewModel.destinationStation.code}"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_general"
+            app:layout_constraintBottom_toTopOf="@id/departure_date_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/departure_view" />
+
+        <include
+            android:id="@+id/departure_date_view"
+            layout="@layout/date_view_item"
+            app:date="@{viewModel.date}"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_general"
+            app:layout_constraintBottom_toTopOf="@id/passengers_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/destination_view" />
+
+        <include
+            android:id="@+id/passengers_view"
+            layout="@layout/passenger_view_item"
+            app:adultsCount="@{viewModel.adultsCount}"
+            app:teensCount="@{viewModel.teensCount}"
+            app:childrenCount="@{viewModel.childrenCount}"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_general"
+            app:layout_constraintBottom_toTopOf="@id/barrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/departure_date_view" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="@dimen/match_constraints"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="passengers_view" />
+
+        <Button
+            android:id="@+id/search_cta"
+            bind:originStation="@{viewModel.originStation.code}"
+            bind:destinationStation="@{viewModel.destinationStation.code}"
+            bind:date="@{viewModel.date}"
+            bind:adultsCount="@{viewModel.adultsCount}"
+            style="@style/Button.Icon.Large"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_general"
+            android:text="@string/search"
+            app:icon="@android:drawable/ic_search_category_default"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

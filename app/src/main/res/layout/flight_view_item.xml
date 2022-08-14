@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="subtitle"
+            type="String" />
+
+        <variable
+            name="airportCode"
+            type="String" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_small">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Text.Title.Bold"
+                android:layout_width="@dimen/match_constraints"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_tiny"
+                app:layout_constraintBottom_toTopOf="@id/subtitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:text="@{subtitle}"
+                style="@style/Text.Subtitle.Large"
+                android:layout_width="@dimen/match_constraints"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_tiny"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/airportCode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                tools:text="Wroclaw" />
+
+            <TextView
+                android:id="@+id/airportCode"
+                android:text="@{airportCode}"
+                style="@style/Text.Subtitle.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/size_small"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/subtitle"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                tools:text="WRO" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

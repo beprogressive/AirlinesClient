@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/size_tiny"
+    android:background="?backgroundColor"
+    android:elevation="@dimen/size_tiny">
+
+    <TextView
+        android:id="@+id/origin"
+        style="@style/Text.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/size_general"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/departure_icon"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="WRO" />
+
+    <ImageView
+        android:id="@+id/departure_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_tiny"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_baseline_flight_takeoff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/departure_time"
+        app:layout_constraintStart_toEndOf="@id/origin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/departure_time"
+        style="@style/Text.Subtitle.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/match_constraints"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/flight_number"
+        app:layout_constraintStart_toEndOf="@id/departure_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="14:45" />
+
+    <TextView
+        android:id="@+id/flight_number"
+        style="@style/Text.Subtitle.Medium"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        app:layout_constraintBottom_toTopOf="@id/flight_duration"
+        app:layout_constraintEnd_toStartOf="@id/arrival_time"
+        app:layout_constraintStart_toEndOf="@id/departure_time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="FR 1927" />
+
+    <TextView
+        android:id="@+id/flight_duration"
+        style="@style/Text.Subtitle.Medium"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/arrival_time"
+        app:layout_constraintStart_toEndOf="@id/departure_time"
+        app:layout_constraintTop_toBottomOf="@id/flight_number"
+        tools:text="2h 40min" />
+
+    <TextView
+        android:id="@+id/arrival_time"
+        style="@style/Text.Subtitle.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/match_constraints"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/arrival_icon"
+        app:layout_constraintStart_toEndOf="@id/flight_number"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry"
+        tools:text="16:50" />
+
+    <ImageView
+        android:id="@+id/arrival_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_tiny"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_baseline_flight_land"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/destination"
+        app:layout_constraintStart_toEndOf="@id/arrival_time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/destination"
+        style="@style/Text.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/arrival_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="DUB" />
+</androidx.constraintlayout.widget.ConstraintLayout>
