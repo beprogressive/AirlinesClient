@@ -37,6 +37,7 @@ class DataCollectorImpl(
         teen: Int,
         child: Int
     ): Boolean {
+
         val items = flightResponseToFlightItems(
             flightService.getFlights(
                 date,
